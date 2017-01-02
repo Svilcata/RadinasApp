@@ -1,11 +1,9 @@
 <resources>
     <string name="app_name">RadinasApp</string>
-    <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
-    <string name="teethpictureclickable">teethPictureClickable</string>
     <string name="select">select</string>
     <string name="division">\u00F7</string>
-
+    <string name="edittext_hint"><font size="10">мл амп..</font></string>
+    <string name="edittext_weightHint"><font size="12">тегло</font></string>
 
     <string name="Lidocaine">Lidocaine is rapidly metabolized by the liver and less than 10% of a dose is excreted unchanged in the urine. Oxidative N-dealkylation, a major pathway of metabolism, results in the metabolites monoethylglycinexylidide and glycinexylidide. The pharmacological/toxicological activities of these metabolites are similar to but less potent than Lidocaine. The primary metabolite in urine is a conjugate of 4-hydroxy-2, 6-dimethylaniline.
 

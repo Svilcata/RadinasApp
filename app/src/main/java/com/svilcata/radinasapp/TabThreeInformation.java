@@ -1,7 +1,7 @@
 package com.svilcata.radinasapp;
 
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -21,8 +21,10 @@ public class TabThreeInformation extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent Email = new Intent(Intent.ACTION_SEND);
+                Email.setType("message/plain");
+                Email.putExtra(Intent.EXTRA_EMAIL, new String[]{"svilen.strahilov19@gmail.com"});
+                startActivity(Intent.createChooser(Email, "Send Feedback: "));
             }
         });
 

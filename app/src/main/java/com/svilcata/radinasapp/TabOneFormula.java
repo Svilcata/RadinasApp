@@ -61,6 +61,7 @@ public class TabOneFormula extends Fragment {
                         formulaLayout.setVisibility(LinearLayout.VISIBLE);
                         firstConstant = 4.5;
                         secondConstant = 20;
+                        //weight_ET.setFilters(new InputFilter[]{new CustomRangeInputFilter(0f, 66.7f)});
                         textInformation_TxT.setText(R.string.Lidocaine);
                         calculate_Btn.setText("изчисли");
                         firstConstant_TxT.setText(firstConstant + "mg/kg" + " * ");

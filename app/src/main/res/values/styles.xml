@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/ColorForBack</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -19,6 +20,7 @@
 
     <style name="TealButton" parent="Widget.AppCompat.Button.Colored">
         <item name="android:textColor">@color/White</item>
-        <item name="colorButtonNormal">@color/Teal</item>
+        <item name="colorButtonNormal">@color/Brown</item>
     </style>
+
 </resources>
