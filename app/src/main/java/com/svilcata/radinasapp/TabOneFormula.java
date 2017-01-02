@@ -27,7 +27,7 @@ public class TabOneFormula extends Fragment {
     private int anesthSpinnerPosition;
     private Button calculate_Btn;
     private LinearLayout formulaLayout;
-    private TextView firstConstant_TxT, secondConstant_TxT;
+    private TextView firstConstant_TxT, secondConstant_TxT, textInformation_TxT;
     private EditText weight_ET, mililit_ET;
     private double firstConstant = 0, secondConstant = 0;
     private String myEditValueAsStringOne, myEditValueAsStringTwo;
@@ -41,6 +41,7 @@ public class TabOneFormula extends Fragment {
         formulaLayout = (LinearLayout) rootView.findViewById(R.id.layout_formula);
         weight_ET = (EditText) rootView.findViewById(R.id.weight_EditText);
         mililit_ET = (EditText) rootView.findViewById(R.id.mililiteres_EditText);
+        textInformation_TxT = (TextView) rootView.findViewById(R.id.textDisplay);
 
         adapter = ArrayAdapter.createFromResource(getContext(), R.array.Anesthetics, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -54,11 +55,13 @@ public class TabOneFormula extends Fragment {
                 switch (position) {
                     case 0:
                         formulaLayout.setVisibility(LinearLayout.INVISIBLE);
+                        textInformation_TxT.setText("");
                         break;
                     case 1:
                         formulaLayout.setVisibility(LinearLayout.VISIBLE);
                         firstConstant = 4.5;
                         secondConstant = 20;
+                        textInformation_TxT.setText(R.string.Lidocaine);
                         calculate_Btn.setText("изчисли");
                         firstConstant_TxT.setText(firstConstant + "mg/kg" + " * ");
                         secondConstant_TxT.setText(secondConstant + "mg" + " * ");

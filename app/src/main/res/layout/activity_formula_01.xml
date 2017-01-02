@@ -37,10 +37,11 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/firstspinner"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="15dp">
 
         <LinearLayout
             android:id="@+id/layout_formula"
@@ -69,9 +70,10 @@
                 android:inputType="numberDecimal" />
 
             <TextView
+                android:textSize="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="/" />
+                android:text="@string/division" />
 
             <TextView
                 android:id="@+id/formulaSecondConstant"
@@ -93,14 +95,37 @@
 
         <Button
             android:id="@+id/calculateButton"
-            style="@style/TealButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/layout_formula"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:text="изчисли" />
+            android:text="изчисли"
+            android:theme="@style/TealButton" />
 
     </RelativeLayout>
+
+    <View
+        android:id="@+id/breakThroughLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/breakThroughLine"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
 
 </RelativeLayout>
