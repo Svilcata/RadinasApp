@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#EF6C00</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="White">#FFFFFF</color>
+    <color name="Teal">#00695C</color>
+
+    <color name="colorFirstBottomPart">#FF0080</color>
+    <color name="colorSecondBottomPart">#341BE4</color>
+    <color name="colorThirdBottomPart">#05FA12</color>
+    <color name="colorFourthBottomPart">#47B8AF</color>
+    <color name="colorFifthBottomPart">#27D8C1</color>
+    <color name="colorSixthBottomPart">#000080</color>
+    <color name="colorSeventhBottomPart">#5A64A5</color>
+    <color name="colorEighthBottomPart">#D02FC8</color>
+
+    <color name="colorFirstUpperPart">#ED1C24</color>
+    <color name="colorSecondUpperPart">#FFF200</color>
+    <color name="colorThirdUpperPart">#FF7F27</color>
+    <color name="colorFourthUpperPart">#FFAEC9</color>
+    <color name="colorFifthUpperPart">#880015</color>
+    <color name="colorSixthUpperPart">#7F7F7F</color>
+    <color name="colorSeventhUpperPart">#B97A57</color>
+    <color name="colorEighthUpperPart">#8000FF</color>
+
 </resources>

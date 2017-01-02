@@ -6,10 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by Svilcata on 07-Dec-16.
- */
-
 public class TabTwoPainSupress extends Fragment {
 
     @Override
