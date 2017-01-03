@@ -7,11 +7,52 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/thirdTabSpinner"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="tab3" />
+        android:layout_marginTop="30dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edittext_border"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/SpinnerTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_border"
+                android:padding="5dp"
+                android:prompt="@string/select"
+                android:spinnerMode="dropdown"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/dropdown"
+                android:contentDescription="@string/app_name" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/thirdTabSpinner"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/informationTxT_ThirdTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </ScrollView>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
