@@ -6,7 +6,8 @@
 
     <color name="White">#FFFFFF</color>
     <color name="Teal">#00695C</color>
-    <color name="Brown">#795548</color>
+    <color name="Orange">#EF6C00</color>
     <color name="ColorForBack">#FFCC80</color>
+    <color name="Brown">#795548</color>
 
 </resources>

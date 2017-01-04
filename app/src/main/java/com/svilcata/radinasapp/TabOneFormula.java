@@ -54,10 +54,6 @@ public class TabOneFormula extends Fragment {
 
                 switch (position) {
                     case 0:
-                        formulaLayout.setVisibility(LinearLayout.INVISIBLE);
-                        textInformation_TxT.setText("");
-                        break;
-                    case 1:
                         formulaLayout.setVisibility(LinearLayout.VISIBLE);
                         firstConstant = 4.5;
                         secondConstant = 20;
@@ -67,7 +63,7 @@ public class TabOneFormula extends Fragment {
                         firstConstant_TxT.setText(firstConstant + "mg/kg" + " * ");
                         secondConstant_TxT.setText(secondConstant + "mg" + " * ");
                         break;
-                    case 2:
+                    case 1:
                         formulaLayout.setVisibility(LinearLayout.VISIBLE);
                         firstConstant = 7;
                         secondConstant = 20;

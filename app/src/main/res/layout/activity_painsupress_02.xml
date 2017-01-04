@@ -4,109 +4,176 @@
     android:layout_height="match_parent">
 
 
+    <View
+        android:id="@+id/breakThroughLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
     <LinearLayout
         android:id="@+id/gornaCheliust"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:orientation="horizontal"
-        android:padding="5dp">
+        android:layout_above="@+id/breakThroughLine1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/imageButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/purvozubche" />
+            android:layout_weight="12.5"
+            android:src="@drawable/purvogore" />
 
         <ImageButton
             android:id="@+id/imageButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/imageButton"
-            android:paddingLeft="2dp"
-            android:paddingRight="2dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/vtorozubche" />
+            android:layout_weight="12.5"
+            android:src="@drawable/vtorogore" />
 
         <ImageButton
             android:id="@+id/imageButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/imageButton2"
-            android:layout_toEndOf="@+id/imageButton2"
-            android:layout_toRightOf="@+id/imageButton2"
-            android:scaleType="centerCrop"
-            android:src="@drawable/tretozubche" />
+            android:layout_weight="12.5"
+            android:src="@drawable/tretogore" />
+
 
         <ImageButton
             android:id="@+id/imageButton4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/imageButton3"
-            android:layout_toRightOf="@+id/imageButton3"
-            android:paddingLeft="2dp"
-            android:paddingRight="2dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/chetvurtozubche" />
+            android:layout_weight="12.5"
+            android:src="@drawable/chetvurtogore" />
 
         <ImageButton
             android:id="@+id/imageButton5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/imageButton4"
-            android:layout_toRightOf="@+id/imageButton4"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/petozubche" />
+            android:layout_weight="12.5"
+            android:src="@drawable/petogore" />
 
         <ImageButton
             android:id="@+id/imageButton6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/imageButton5"
-            android:layout_toRightOf="@+id/imageButton5"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/shestozubche" />
+            android:layout_weight="12.5"
+            android:src="@drawable/shestogore" />
 
         <ImageButton
             android:id="@+id/imageButton7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/imageButton6"
-            android:layout_toRightOf="@+id/imageButton6"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/sedmozubche" />
+            android:layout_weight="12.5"
+            android:src="@drawable/sedmogore" />
 
         <ImageButton
             android:id="@+id/imageButton8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/imageButton7"
-            android:layout_toRightOf="@+id/imageButton7"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/osmozubche" />
-
-
+            android:layout_weight="12.5"
+            android:src="@drawable/osmogore" />
     </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/dolnaCheliust"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/gornaCheliust"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/breakThroughLine1"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="12.5"
+            android:src="@drawable/purvodolo" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="12.5"
+            android:src="@drawable/vtorodolo" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="12.5"
+            android:src="@drawable/tretodolo" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="12.5"
+            android:src="@drawable/chetvurtodolo" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="12.5"
+            android:src="@drawable/petodolo" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="12.5"
+            android:src="@drawable/shestodolo" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="12.5"
+            android:src="@drawable/sedmodolo" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="12.5"
+            android:src="@drawable/osmodolo" />
 
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:background="@drawable/rounderborderedittext"
+        android:fontFamily="monospace"
+        android:text="@string/chooseTooth"
+        android:textAlignment="center"
+        android:textColor="@color/Brown" />
 
 
 </RelativeLayout>

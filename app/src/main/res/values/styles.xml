@@ -20,7 +20,7 @@
 
     <style name="TealButton" parent="Widget.AppCompat.Button.Colored">
         <item name="android:textColor">@color/White</item>
-        <item name="colorButtonNormal">@color/Brown</item>
+        <item name="colorButtonNormal">@color/Orange</item>
     </style>
 
 </resources>
