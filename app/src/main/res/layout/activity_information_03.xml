@@ -46,11 +46,17 @@
         android:layout_below="@id/thirdTabSpinner"
         android:layout_marginTop="20dp">
 
-        <TextView
-            android:id="@+id/informationTxT_ThirdTab"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/informationTxT_ThirdTab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="xaxaxa"/>
+        </android.support.v7.widget.CardView>
 
     </ScrollView>
 

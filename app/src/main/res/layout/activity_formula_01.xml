@@ -107,7 +107,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:text="@string/calculate"
-            android:theme="@style/TealButton" />
+            android:theme="@style/OrangeButton" />
 
     </RelativeLayout>
 
@@ -129,10 +129,10 @@
         android:padding="15dp">
 
         <TextView
-            android:textColor="@color/Brown"
             android:id="@+id/textDisplay"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/Brown" />
     </ScrollView>
 
 

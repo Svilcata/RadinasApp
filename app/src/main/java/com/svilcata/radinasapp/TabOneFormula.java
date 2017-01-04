@@ -26,6 +26,7 @@ public class TabOneFormula extends Fragment {
     private ArrayAdapter<CharSequence> adapter;
     private int anesthSpinnerPosition;
     private Button calculate_Btn;
+    private int limit = 0;
     private LinearLayout formulaLayout;
     private TextView firstConstant_TxT, secondConstant_TxT, textInformation_TxT;
     private EditText weight_ET, mililit_ET;
@@ -54,18 +55,24 @@ public class TabOneFormula extends Fragment {
 
                 switch (position) {
                     case 0:
+                        formulaLayout.setVisibility(LinearLayout.INVISIBLE);
+                        textInformation_TxT.setText("");
+                        break;
+                    case 1:
                         formulaLayout.setVisibility(LinearLayout.VISIBLE);
                         firstConstant = 4.5;
                         secondConstant = 20;
+                        limit = 300;
                         //weight_ET.setFilters(new InputFilter[]{new CustomRangeInputFilter(0f, 66.7f)});
                         textInformation_TxT.setText(R.string.Lidocaine);
                         calculate_Btn.setText("изчисли");
                         firstConstant_TxT.setText(firstConstant + "mg/kg" + " * ");
                         secondConstant_TxT.setText(secondConstant + "mg" + " * ");
                         break;
-                    case 1:
+                    case 2:
                         formulaLayout.setVisibility(LinearLayout.VISIBLE);
                         firstConstant = 7;
+                        limit = 500;
                         secondConstant = 20;
                         calculate_Btn.setText("изчисли");
                         firstConstant_TxT.setText(firstConstant + "mg/kg" + " * ");
@@ -101,7 +108,11 @@ public class TabOneFormula extends Fragment {
 
     private void selectedAnesthetic(double firstValue, double secondValue, double firstConstant,
                                     double secondConstant) {
-        double formula = (firstConstant * firstValue) / (secondConstant * secondValue);
+        double firstCalculation = firstConstant * firstValue;
+        if (firstCalculation > limit) {
+            firstCalculation = limit;
+        }
+        double formula = (firstCalculation) / (secondConstant * secondValue);
         DecimalFormat df = new DecimalFormat("###.#");
         String formulaAsText = String.valueOf(df.format(formula));
         calculate_Btn.setText(formulaAsText + " Броя карпули");
