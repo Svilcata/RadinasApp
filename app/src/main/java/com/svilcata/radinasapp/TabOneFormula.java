@@ -17,10 +17,6 @@ import android.widget.Toast;
 
 import java.text.DecimalFormat;
 
-/**
- * Created by Svilcata on 07-Dec-16.
- */
-
 public class TabOneFormula extends Fragment {
 
     private ArrayAdapter<CharSequence> adapter;
