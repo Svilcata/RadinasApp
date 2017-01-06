@@ -32,7 +32,9 @@ public class TabOneFormula extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.activity_formula_01, container, false);
+
         Spinner spinnerAnesthetics = (Spinner) rootView.findViewById(R.id.spinnerOne);
+
         firstConstant_TxT = (TextView) rootView.findViewById(R.id.formulaFirstConstant);
         secondConstant_TxT = (TextView) rootView.findViewById(R.id.formulaSecondConstant);
         formulaLayout = (LinearLayout) rootView.findViewById(R.id.layout_formula);
