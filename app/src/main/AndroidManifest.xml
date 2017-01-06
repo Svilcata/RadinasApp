@@ -20,7 +20,9 @@
         </activity>
         <activity
             android:name=".InfoActivity"
-            android:theme="@style/Theme.AppCompat.Light.Dialog">
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar">
 
         </activity>
     </application>
