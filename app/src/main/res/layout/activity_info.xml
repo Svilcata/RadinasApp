@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_info"
     android:layout_width="match_parent"
@@ -9,16 +9,38 @@
     android:orientation="vertical"
     tools:context="com.svilcata.radinasapp.InfoActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorForBack"
+        android:src="@drawable/falseteeth" />
+
     <TextView
         android:id="@+id/showNumberTooth"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="xaxa"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <View
+        android:id="@+id/breakThroughLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
 
 
     <TextView
         android:id="@+id/showTextForNumberTooth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/showNumberTooth" />
+        android:layout_below="@id/showNumberTooth"
+        android:layout_marginTop="5dp"
+        android:text="xaxaxaxaa" />
 
-</RelativeLayout>
+</LinearLayout>

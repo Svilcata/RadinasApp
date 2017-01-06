@@ -27,14 +27,21 @@ public class InfoActivity extends AppCompatActivity {
         Intent intent = getIntent();
         int toothNumber = intent.getExtras().getInt("numberOfTooth");
 
-        textView.setText(String.valueOf(toothNumber));
 
         switch (toothNumber) {
             case 0:
                 textView1.setText(R.string.calculate);
             case 1:
-                textView1.setText(R.string.chooseTooth);
+                textView.setText(" centralen rezec ajsdhasjdhasj ");
+                textView1.setText("1vo zubche");
                 break;
+            case 2:
+                textView1.setText("2ro zubche");
+                break;
+            case 3:
+                textView1.setText("3to zubche");
+            case 4:
+                textView1.setText("4to zubche");
         }
 
 

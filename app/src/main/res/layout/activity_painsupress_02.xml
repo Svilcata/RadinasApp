@@ -84,17 +84,28 @@
     </LinearLayout>
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:background="@drawable/rounderborderedittext"
+        android:fontFamily="monospace"
+        android:text="@string/chooseTooth"
+        android:textAlignment="center"
+        android:textColor="@color/Brown" />
+
     <LinearLayout
         android:id="@+id/dolnaCheliust"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/breakThroughLine1"
-        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:paddingLeft="10dp"
-        android:paddingRight="10dp">
+        android:paddingRight="10dp"
+        android:layout_below="@+id/breakThroughLine1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
 
         <ImageButton
@@ -162,18 +173,6 @@
 
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:padding="10dp"
-        android:background="@drawable/rounderborderedittext"
-        android:fontFamily="monospace"
-        android:text="@string/chooseTooth"
-        android:textAlignment="center"
-        android:textColor="@color/Brown" />
 
 
 </RelativeLayout>
